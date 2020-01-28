@@ -1,0 +1,45 @@
+name: my-password-manager
+version: "0.1.0"
+author: Mariusz Bielecki <288728@uwr.edu.pl>
+about: Manages passwords in command line
+
+subcommands:
+    - add:
+        about: Save passwords
+        args:
+            - KEY:
+                help: key that will be associated with a password
+                required: true
+                index: 1
+            - auto-generate:
+                short: a
+                help: generate password automatically
+
+    - remove:
+        about: delete passwords
+        args:
+            - KEY:
+                help: key that is associated with a password
+                required: true
+                index: 1
+    - list:
+        about: list passwords
+
+    - update:
+        about: update passwords
+        args:
+            - KEY:
+                help: key that is associated with a password
+                required: true
+                index: 1
+            - auto-generate:
+                short: a
+                help: generate password automatically
+    - copy:
+        about: copy passwords to clipboard
+        args:
+            - KEY:
+                help: key that is associated with a password
+                required: true
+                index: 1
+
