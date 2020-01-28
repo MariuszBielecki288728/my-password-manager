@@ -1,5 +1,5 @@
 [package]
-name = "manager"
+name = "my-password-manager"
 version = "0.1.0"
 authors = ["Mariusz Bielecki <maniekb12@gmail.com>"]
 edition = "2018"
@@ -7,3 +7,9 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+clap = {version = "2.26.0", features = ["yaml"] }
+rpassword = "4.0"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+wayland-client = "0.23.6"
+smithay-clipboard = "0.3.6"
