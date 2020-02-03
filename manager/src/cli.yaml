@@ -35,8 +35,8 @@ subcommands:
             - auto-generate:
                 short: a
                 help: generate password automatically
-    - copy:
-        about: copy passwords to clipboard
+    - show:
+        about: put passwords to output
         args:
             - KEY:
                 help: key that is associated with a password

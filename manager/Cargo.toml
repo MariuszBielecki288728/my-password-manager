@@ -11,5 +11,5 @@ clap = {version = "2.26.0", features = ["yaml"] }
 rpassword = "4.0"
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-wayland-client = "0.23.6"
-smithay-clipboard = "0.3.6"
+sodiumoxide = "0.2.5"
+passwords = "1.1.5"
